@@ -30,8 +30,8 @@ export ENABLE_GLOBAL_ACCESS=<%= properties.ecs_broker.enable_global_access_to_pl
 export ORG=${APP_NAME}-service-org
 export SPACE=${APP_NAME}-service-space
 export BROKER_NAME=${APP_NAME}-${APP_VERSION}-service-broker
-export BROKER_USER=<%= properties.ecs_broker.broker.user %>
-export BROKER_PASS=<%= properties.ecs_broker.broker.password %>
+export BROKER_SECURITYUSER=<%= properties.ecs_broker.broker.securityUser %>
+export BROKER_SECURITYPASS=<%= properties.ecs_broker.broker.securityPassword %>
 export BROKER_HOST=$SCHEME://${APP_URI}.${APP_DOMAIN}
 
 # Use this only when there are already inbuild services that need to enabled for public
@@ -46,9 +46,9 @@ function authenticate_and_target() {
 function register_broker() {
   broker=`cf service-brokers | grep $BROKER_NAME || true`
   if [[ -z "$broker" ]]; then
-    cf create-service-broker $BROKER_NAME $BROKER_USER $BROKER_PASS $BROKER_HOST
+    cf create-service-broker $BROKER_NAME $BROKER_SECURITYUSER $BROKER_SECURITYPASS $BROKER_HOST
   else
-    cf update-service-broker $BROKER_NAME $BROKER_USER $BROKER_PASS $BROKER_HOST
+    cf update-service-broker $BROKER_NAME $BROKER_SECURITYUSER $BROKER_SECURITYPASS $BROKER_HOST
   fi
 }
 

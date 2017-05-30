@@ -1,0 +1,44 @@
+---
+packages:
+- name: ecs_service_broker
+  version: !binary |-
+    ZTA0M2UwZmFkMWEyNWUxMTgyYjJlMzM4ZTUwOGZjM2QxYWM1NGI2Nw==
+  fingerprint: !binary |-
+    ZTA0M2UwZmFkMWEyNWUxMTgyYjJlMzM4ZTUwOGZjM2QxYWM1NGI2Nw==
+  sha1: !binary |-
+    MDBiMzlhNDBmZDhiZWJlZDQyMTAzM2VlNmVkNGRmNTcwYzk1ZTA1ZQ==
+  dependencies: []
+- name: cf_cli
+  version: !binary |-
+    OTRlOTkwOGMxODI2OGYzYjYyMWE1MDM0MzlkMjMxMjBkNmY1ODZjMQ==
+  fingerprint: !binary |-
+    OTRlOTkwOGMxODI2OGYzYjYyMWE1MDM0MzlkMjMxMjBkNmY1ODZjMQ==
+  sha1: !binary |-
+    YzgyMmFiNTZhYzNlNzVmNmMwZWExNjgyN2QwM2EyZjZjYTRlZWRkOA==
+  dependencies: []
+jobs:
+- name: register-broker
+  version: !binary |-
+    MjQ3MjhiMGRkNzEwZDA4NWNlYjlhYTEyMzNkNTJlZTgxZTM4ZTY0Nw==
+  fingerprint: !binary |-
+    MjQ3MjhiMGRkNzEwZDA4NWNlYjlhYTEyMzNkNTJlZTgxZTM4ZTY0Nw==
+  sha1: !binary |-
+    YWUwMDZmOTI5MTdhODY0MWEwOTJiZGU0ZjFiOGM3ZTQ2YmI4MTIwZg==
+- name: destroy-broker
+  version: !binary |-
+    ZTFhNjlmNDhhYTIzMTE5NTZhNjM3ZTU5NGI3M2JjNThhYzdjYjhhOQ==
+  fingerprint: !binary |-
+    ZTFhNjlmNDhhYTIzMTE5NTZhNjM3ZTU5NGI3M2JjNThhYzdjYjhhOQ==
+  sha1: !binary |-
+    ZGMzNzA1MTJkMTVhMmI3NjJkNzBhMzUyMjg0MzBjMWZiNGViNTBlNQ==
+- name: deploy-service-broker
+  version: !binary |-
+    ZWQ5NmNjM2FlMjVjYjg0NGY1YzQ4NjliZjE4ZDU5ODQ3MmQyNDY4ZA==
+  fingerprint: !binary |-
+    ZWQ5NmNjM2FlMjVjYjg0NGY1YzQ4NjliZjE4ZDU5ODQ3MmQyNDY4ZA==
+  sha1: !binary |-
+    ZjU4NmEzYjk1NjM1MTU4ZTBiYWIwNjRjZWEzYmQ1MzE4ODc0NzhiMA==
+commit_hash: 919ab33c
+uncommitted_changes: true
+name: ecs_broker
+version: '1.5'

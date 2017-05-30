@@ -40,37 +40,37 @@ properties:
     description: 'Username of the CF admin user'
   ecs_broker.cf.admin_password:
     description: 'Password of the CF admin user'
-  ecs_broker.broker.user:
+  ecs_broker.broker.securityUser:
     description: 'Broker basic auth user'
-  ecs_broker.broker.password:
+  ecs_broker.broker.securityPassword:
     description: 'Broker basic auth password'
   ecs_broker.broker.certificate:
     description: 'Broker Certificate'
   ecs_broker.broker.internal_service_names:
     description: 'Internal service name'
-  managementEndpoint:
+  ecs_broker.broker.managementEndpoint:
     decription: ECS Management Endpoint
-  objectEndpoint:
+  ecs_broker.broker.objectEndpoint:
     description: 'ECS Object Endpoint'
-  baseUrl:
+  ecs_broker.broker.baseUrl:
     description: 'ECS Base URL'
-  repositoryEndpoint:
+  ecs_broker.broker.repositoryEndpoint:
     description: 'Repository Endpoint'
-  replicationGroup:
+  ecs_broker.broker.replicationGroup:
     description: 'Replication Group'
-  namespace:
+  ecs_broker.broker.namespace:
     description: 'Namespace'
-  repositoryUser:
+  ecs_broker.broker.repositoryUser:
     description: 'Repository User'
-  repositoryBucket:
+  ecs_broker.broker.repositoryBucket:
     description: 'Repository Bucket'
-  username:
+  ecs_broker.broker.user:
     description: 'ECS Username'
-  password:
+  ecs_broker.broker.password:
     description: 'ECS Password'
-  prefix:
+  ecs_broker.broker.prefix:
     description: 'ECS Repository Prefix'
-  brokerApiVersion:
+  ecs_broker.broker.brokerApiVersion:
     description: 'ECS Broker API Version'
 
   ### ON_DEMAND_PLAN_BEGIN_MARKER

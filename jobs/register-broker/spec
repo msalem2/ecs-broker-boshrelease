@@ -23,9 +23,9 @@ properties:
     description: 'Username of the CF admin user'
   ecs_broker.cf.admin_password:
     description: 'Password of the CF admin user'
-  ecs_broker.broker.user:
+  ecs_broker.broker.securityUser:
     description: 'Broker basic auth user'
-  ecs_broker.broker.password:
+  ecs_broker.broker.securityPassword:
     description: 'Broker basic auth password'
   ecs_broker.broker.internal_service_names:
     description: 'name of in-built services in the Service Broker Application'

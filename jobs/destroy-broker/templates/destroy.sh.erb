@@ -29,8 +29,8 @@ export APP_URI=<%= properties.ecs_broker.app_uri %>
 export ORG=${APP_NAME}-service-org
 export SPACE=${APP_NAME}-service-space
 export BROKER_NAME=${APP_NAME}-${APP_VERSION}-service-broker
-export BROKER_USER=<%= properties.ecs_broker.broker.user %>
-export BROKER_PASS=<%= properties.ecs_broker.broker.password %>
+export BROKER_SECURITYUSER=<%= properties.ecs_broker.broker.securityUser %>
+export BROKER_SECURITYPASS=<%= properties.ecs_broker.broker.securityPassword %>
 export BROKER_HOST=$SCHEME://${APP_URI}.${APP_DOMAIN}
 export DB_NAME=${APP_NAME}-${APP_VERSION}-mysql
 
