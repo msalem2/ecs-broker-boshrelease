@@ -64,7 +64,7 @@ properties:
     description: 'Repository User'
   ecs_broker.broker.repositoryBucket:
     description: 'Repository Bucket'
-  ecs_broker.broker.user:
+  ecs_broker.broker.username:
     description: 'ECS Username'
   ecs_broker.broker.password:
     description: 'ECS Password'
