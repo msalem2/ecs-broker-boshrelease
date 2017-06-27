@@ -1,22 +1,21 @@
 broker:
-  management-endpoint: <%= properties.ecs_broker.broker.managementEndpoint %>
-  namespace: <%= properties.ecs_broker.broker.namespace %>
-  object-endpoint: <%= properties.ecs_broker.broker.objectEndpoint %>
-  repository-endpoint: <%= properties.ecs_broker.broker.repositoryEndpoint%>
-  replication-group: <%= properties.ecs_broker.broker.replicationGroup %>
+  management-endpoint: <%= properties.managementendpoint %>
+  namespace: <%= properties.namespace %>
+  object-endpoint: <%= properties.objectendpoint %>
+  repository-endpoint: <%= properties.repositoryendpoint%>
+  replication-group: <%= properties.replicationgroup %>
   certificate: ecs_cert.pem
-  base-url: <%= properties.ecs_broker.baseUrl %>
-  repository-user: <%= properties.ecs_broker.broker.repositoryUser%>
-  username: <%= properties.ecs_broker.broker.username %>
-  password: <%= properties.ecs_broker.broker.password %>
-  repository-bucket: <%= properties.ecs_broker.broker.repositoryBucket %>
-  prefix: <%= properties.ecs_broker.broker.prefix %>
-  broker-api-version: <%= properties.ecs_broker.broker.brokerApiVersion %>
+  base-url: <%= properties.baseurl %>
+  repository-user: <%= properties.repositoryuser%>
+  username: <%= properties.username%>
+  password: <%= properties.password%>
+  repository-bucket: <%= properties.repositorybucket %>
+  prefix: <%= properties.prefix %>
   repository-service-id: f3cbab6a-5172-4ff1-a5c7-72990f0ce2aa
   repository-plan-id: 89d20694-9ab0-4a98-bc6a-868d6d4ecf31
 security:
   user:
-    password: <%= properties.ecs_broker.broker.securityPassword %>
+    password: <%= properties.securitypassword %>
 catalog:
   services:
     - id: 09cac1c6-1b0a-11e6-b6ba-3e1d05defe78

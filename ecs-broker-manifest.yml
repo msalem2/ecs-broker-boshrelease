@@ -55,32 +55,29 @@ name: ecs-broker
 properties:
   app_domains: apps.pcf.asd.cse
   domain: sys.pcf.asd.cse
-  ecs_broker:
-    app_name: EcsServiceBroker
-    app_push:
-      memory: 512
-      org_quota: 1024
-      timeout: 180
-    app_uri: ecs-broker
-    app_version: v1
-    enable_global_access_to_plans: true
-    broker:
-      internal_service_names: ecs-bucket
-      password: ChangeMe
-      username: root
-      securityUser: user
-      securityPassword: password
-      namespace: ns1
-      replicationGroup: rp
-      managementEndpoint: https://10.1.83.119:4443
-      objectEndpoint: http://10.1.83.119:9020
-      baseUrl: ""
-      repositoryEndpoint: http://10.1.83.119:9020
-      repositoryUser: ""
-      repositoryBucket: ""
-      prefix: ""
-      brokerApiVersion: ""
-      certificate: |
+  app_name: EcsServiceBroker
+  memory: 512
+  org_quota: 1024
+  timeout: 180
+  app_uri: ecs-broker
+  app_version: v1
+  enable_global_access_to_plans: true
+  internal_service_names: ecs-bucket
+  password: ChangeMe
+  user: root
+  securityUser: user
+  securityPassword: password
+  namespace: ns1
+  replicationGroup: rp
+  managementEndpoint: https://10.1.83.119:4443
+  objectEndpoint: http://10.1.83.119:9020
+  baseUrl: ""
+  repositoryEndpoint: http://10.1.83.119:9020
+  repositoryUser: ""
+  repositoryBucket: ""
+  prefix: ""
+  brokerApiVersion: ""
+  certificate: |
         -----BEGIN CERTIFICATE-----
         MIIDCTCCAfGgAwIBAgIJAIVr+Mx++qwdMA0GCSqGSIb3DQEBCwUAMBQxEjAQBgNV
         BAMTCWxvY2FsaG9zdDAeFw0xNzA0MjEyMjU1MjVaFw0yNzA0MTkyMjU1MjVaMBQx
@@ -100,18 +97,11 @@ properties:
         VAbxCd5qkzRQMTET/ClS7hRb6Jz2QnsDA1qSXyUNBiTCswCvD3obPEVK66E7gJf1
         WVuW0vx9I5rWFmGJeQ==
         -----END CERTIFICATE-----
-    cf:
-      admin_user: admin
-      admin_password: UezDX853P9DbctiMkLZoArRV_iI8vgKf
-    create_open_security_group: false
-    encryption_key: test
-    on_demand_service_plans:
-    - guid: 0ab34def-7d2f-4ff0-bfe7-62b5946cf9d1
-      plan_description: default plan for target services
-      plan_details: "init_size: 50: mb initial size of tablespace;\r\nmax_size: 500:
-        \ mb max size of tablespace;\r\nconnections: 5: max number of concurrent connections"
-      plan_name: Standard
-    persistence_store_type: none
+  cf:
+    admin_user: admin
+    admin_password: UezDX853P9DbctiMkLZoArRV_iI8vgKf
+  create_open_security_group: false
+  encryption_key: test
   ssl:
     skip_cert_verify: true
   uaa:
